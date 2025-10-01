@@ -777,6 +777,7 @@ def main():
             prepare_dataset,
             remove_columns=remove_columns,
             num_proc=num_workers,
+            writer_batch_size=100,
             desc="preprocess train dataset",
         )
 
